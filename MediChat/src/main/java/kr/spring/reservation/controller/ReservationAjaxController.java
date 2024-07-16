@@ -39,12 +39,17 @@ public class ReservationAjaxController {
 
 	@GetMapping("/reservation/hosHours")
 	@ResponseBody
-	public HospitalVO getHosHours(Long hos_num, HttpSession session) {
+	public Map<String,Object> getHosHours(Long hos_num, HttpSession session) {
 		MemberVO user = (MemberVO) session.getAttribute("user");
+		Map<String, Object> map = new HashMap<>();
 		if (user == null) {
-			throw new RuntimeException("로그인이 필요합니다.");
+			map.put("result", "logout");
+		}else {
+			HospitalVO hospitalVO = reservationService.getHosHours(hos_num);
+			map.put("result", "success");
+			map.put("hospitalVO", hospitalVO);
 		}
 
-		return reservationService.getHosHours(hos_num);
+		return map;
 	}
 }
