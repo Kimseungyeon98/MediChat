@@ -17,7 +17,6 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Controller
 public class ReservationController {
-
 	@GetMapping("/reservation/reservation")
 	@ResponseBody
 	public Map<String,String> reservation(Long hos_num,Model model,HttpSession session) {
