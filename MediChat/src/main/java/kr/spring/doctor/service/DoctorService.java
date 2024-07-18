@@ -30,8 +30,6 @@ public interface DoctorService {
 	//회원탈퇴
 	public void deleteDoctor(Long doc_num);
 	public void deleteDoctor_detail(DoctorVO doctor);
-	
-	public void updateDoctorTreat(DoctorVO doctor);
 
 	//아이디 중복확인
 	public DoctorVO checkId(String mem_id);

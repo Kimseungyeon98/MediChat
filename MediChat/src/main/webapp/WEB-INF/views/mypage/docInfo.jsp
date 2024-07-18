@@ -7,14 +7,6 @@
 <meta charset="UTF-8">
 <title>회원정보</title>
 </head>
-<style>
-ul{
-	margin-top:10%;
-}
-ul li{
-	margin-top:15px;
-}
-</style>
 <body>
 	<div class="docInfo">
 		<ul>
@@ -29,7 +21,7 @@ ul li{
 				</ul></li>
 			<li>가입일 : ${user.doc_reg}</li>
 		</ul>
-		<div class="align-center" style="margin-top:77px;">
+		<div class="align-center">
 			<input type="button" value="회원정보 수정"
 				onclick="location.href='memberModify.jsp'"> <input
 				type="button" value="비밀번호 변경" onclick="location.href='#'">

@@ -98,11 +98,5 @@ public class DoctorServiceImpl implements DoctorService{
 		return doctorMapper.docList(map);
 	}
 
-	@Override
-	public void updateDoctorTreat(DoctorVO doctor) {
-		doctorMapper.updateDoctorTreat(doctor);
-		
-	}
-
 
 }
