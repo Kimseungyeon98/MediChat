@@ -465,7 +465,7 @@ public class DoctorController {
 	@PostMapping("/doctor/registerTreat")
 	public String submitDoctorForm(@Valid DoctorVO doctorVO, BindingResult result, HttpServletRequest request,
 			Model model, HttpSession session) {
-
+ 
 		log.debug("<비대면 진료 신청>" + doctorVO);
 		// 유효성 체크 결과 오류가 있다면 다시 폼으로
 		if (result.hasErrors()) {
