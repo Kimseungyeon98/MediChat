@@ -38,12 +38,12 @@
 }
 .time-section {
     margin-bottom: 15px;
-    text-align: left;
+    text-align: inherit;
     padding: 0;
 }
 .time-row {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     margin-bottom: 10px;
     width: 100%;
 }
@@ -419,7 +419,7 @@ p{
 }
 .time-row {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 10px;
 }
 #schedule_mobtn, #schedule_afbtn {
