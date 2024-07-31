@@ -3,6 +3,22 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.3/dist/sweetalert2.all.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.3/dist/sweetalert2.min.css" rel="stylesheet">
+<style>
+.ben-btn{
+	width:50px;
+	background-color:#ff7369;
+	color:white;
+	border:none;
+	border-radius:3px;
+}
+.cancel-btn{
+	width:50px;
+	background-color:#6171fa;
+	color:white;
+	border:none;
+	border-radius:3px;
+}
+</style>
 <!DOCTYPE html>
 <div class="container">
 	<h2 class="title">회원정보 수정(관리자)</h2>
